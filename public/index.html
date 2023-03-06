@@ -10,62 +10,118 @@
       body {
         padding-top: 40px;
         padding-bottom: 40px;
+        background-color: #fec7d7;
+        display: flex;
+        justify-content: center;
       }
 
       .banner-image {
         width: 128px;
         height: 128px;
+        object-fit: cover;
+        border-radius: 128px;
+      }
+
+      .thumbnail {
+        width: 48px;
+        height: 48px;
+        border-radius: 48px;
+        object-fit: cover;
+      }
+
+      .name {
+        color: #0e172c;
+        display: flex;
+        justify-content: center;
+      }
+
+      .banner {
+        display: flex;
+        justify-content: center;
+      }
+
+      .social-icons {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .social-icons a {
+        color: #0e172c
+      }
+
+      .link {
+        background-color: #0e172c;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+      }
+
+      .link a {
+        color: #fffffe;
+        text-decoration: none;
+        text-align: center;
+        flex-grow: 1;
+      }
+
+      .items {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 600px;
+        flex-grow: 1;
       }
     </style>
 
   </head>
 
   <body>
-    <div class="banner">
-      <img src="/thumbnails/reden-W0rTecVipCI-unsplash.jpg" alt="Whale shark" class="banner-image">
-    </div>
+    <div class="items">
+      <div class="banner">
+        <img src="/thumbnails/max-lissenden-ZuVEyhfoKBk-unsplash.jpg" alt="Whale shark" class="banner-image">
+      </div>
 
-    <div class="name">
-      Jazmine Tran
-    </div>
+      <div class="name">
+        Jazmine Tran
+      </div>
 
-    <div>
-      <a href="https://github.com/jptran0" target="_blank">
-        GitHub
-      </a>
+      <div class="social-icons">
+        <a href="https://github.com/jptran0" target="_blank">
+          GitHub
+        </a>
 
-      <a href="https://www.linkedin.com/in/jazmine-tran-42589219a/" target="_blank">
-        LinkedIn
-      </a>
-    </div>
+        <a href="https://www.linkedin.com/in/jazmine-tran-42589219a/" target="_blank">
+          LinkedIn
+        </a>
+      </div>
 
-    <div class="link">
-      <img src="thumbnails/kawe-rodrigues-UnG6YtMuPeo-unsplash.jpg" alt="Notebook on a desk">
-      <a href="https://dev.to/jptdev">
-        My Tech Journey Journal
-      </a>
-    </div>
+      <div class="link">
+        <img src="thumbnails/kawe-rodrigues-UnG6YtMuPeo-unsplash.jpg" alt="Notebook on a desk" class="thumbnail">
+        <a href="https://dev.to/jptdev">
+          My Tech Journey Journal
+        </a>
+      </div>
 
-    <div class="link">
-      <img src="thumbnails/hans-isaacson-k0dZh0vSQ5A-unsplash.jpg" alt="Computer desk">
-      <a href="https://replit.com/@jptran0">
-        Replit
-      </a>
-    </div>
+      <div class="link">
+        <img src="thumbnails/hans-isaacson-k0dZh0vSQ5A-unsplash.jpg" alt="Computer desk" class="thumbnail">
+        <a href="https://replit.com/@jptran0">
+          Replit
+        </a>
+      </div>
 
-    <div class="link">
-      <img src="thumbnails/minh-triet-KTGBkzzE8BM-unsplash.jpg" alt="Laptop and glasses on a desk">
-      <a href="https://www.indiehackers.com/">
-        Indie Hackers
-      </a>
-    </div>
+      <div class="link">
+        <img src="thumbnails/minh-triet-KTGBkzzE8BM-unsplash.jpg" alt="Laptop and glasses on a desk" class="thumbnail">
+        <a href="https://www.indiehackers.com/">
+          Indie Hackers
+        </a>
+      </div>
 
-    <div class="link">
-      <img src="thumbnails/aman-srivastava-140jjBjn1Do-unsplash.jpg" alt="Computer desk">
-      <a href="https://rubyweekly.com/issues/643">
-        Ruby Weekly
-      </a>
-    </div>
+      <div class="link">
+        <img src="thumbnails/aman-srivastava-140jjBjn1Do-unsplash.jpg" alt="Computer desk" class="thumbnail">
+        <a href="https://rubyweekly.com/issues/643">
+          Ruby Weekly
+        </a>
+      </div>
+  </div>
 
   </body>
 </html>
