@@ -5,42 +5,47 @@
     <title>
       Jazmine Tran
     </title>
-    <!--Connect Font Awesome-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
-
-    <!--Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Karla|Rubik" rel="stylesheet">
-
 
     <style>
-      <style>
-      .background--custom {
-        background-color: #FEC7D7;
-        width: 100vw;
-        height: 100vh;
-        position: absolute;
-        overflow: hidden;
-        z-index: -2;
-        top: 0;
-        left: 0;
-      }
-      canvas#canvas {
-        z-index: -1;
-        position: absolute;
-        width: 100%;
-        height: 60%;
-        transform: rotate(0deg) scale(2) translateY(0%);
-        --gradient-color-1: #FEC7D7; 
-        --gradient-color-2: #D9D4E7; 
-        --gradient-color-3: #C7E1FF;  
-        --gradient-color-4: #A786DF;
-        --gradient-speed: 0.000006;
-      }
-
       body {
         padding-top: 40px;
         padding-bottom: 40px;
-        background-color: #faeee7;
+        background-color: #fec7d7;
+        display: flex;
+        justify-content: center;
+      }
+
+      .name {
+        color: #0e172c;
+        display: flex;
+        justify-content: center;
+      }
+
+      .social-icons {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .social-icons a {
+        color: #0e172c;
+        text-decoration: none;
+      }
+
+      .link {
+        background-color: #0e172c;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+      }
+
+      .link a {
+        color: #fffffe;
+        text-decoration: none;
+        text-align: center;
+        flex-grow: 1;
+      }
+
+      .banner {
         display: flex;
         justify-content: center;
       }
@@ -58,75 +63,21 @@
         border-radius: 48px;
         object-fit: cover;
       }
-
-      .name {
-        color: #33272a;
-        display: flex;
-        justify-content: center;
-        Font-Family: 'Rubik', Sans-Serif;
-        Font-Size: 40px;
-      }
-
-      .banner {
-        display: flex;
-        justify-content: center;
-      }
-
-      .social-icons {
-        display: flex;
-        justify-content: space-around;
-      }
-
-      .social-icons a {
-        color: #0e172c
-      }
-
-      .link {
-        background-color: #0e172c;
-        display: flex;
-        align-items: center;
-        padding: 5px;
-        border-radius: 50px;
-      }
-
-      .link a {
-        color: #fffffe;
-        text-decoration: none;
-        text-align: center;
-        flex-grow: 1;
-        Font-Family: 'Karla', Sans-Serif;
-        Font-Size: 16px;
-      }
-
+      
       .items {
-        background-color: #fec7d7;
-        border-radius: 25px;
-        border: 3px #0e172c solid; 
         display: flex;
         flex-direction: column;
         gap: 30px;
         max-width: 600px;
         flex-grow: 1;
-        padding: 25px;
       }
     </style>
-
   </head>
 
   <body>
-    <div class="background--custom">
-      <canvas id="canvas" />
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/gh/greentfrapp/pocoloco@minigl/minigl.js"></script>
-    <script>
-    var gradient = new Gradient();
-    gradient.initGradient("#canvas");
-    </script>
-
     <div class="items">
       <div class="banner">
-        <img src="/thumbnails/max-lissenden-ZuVEyhfoKBk-unsplash.jpg" alt="Whale shark" class="banner-image">
+        <img src="/thumbnails/max-lissenden-ZuVEyhfoKBk-unsplash.jpg" alt="A whale shark" class="banner-image"> 
       </div>
 
       <div class="name">
@@ -134,43 +85,50 @@
       </div>
 
       <div class="social-icons">
-        <a href="https://github.com/jptran0" target="_blank">
-          <i class="fa-brands fa-github"></i>
+        <a href="https://github.com/jptran0">
+          GitHub
         </a>
 
-        <a href="https://www.linkedin.com/in/jazmine-tran-42589219a/" target="_blank">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-      </div>
-
-      <div class="link">
-        <img src="thumbnails/kawe-rodrigues-UnG6YtMuPeo-unsplash.jpg" alt="Notebook on a desk" class="thumbnail">
-        <a href="https://dev.to/jptdev">
-          My Tech Journey Journal
+        <a href="https://www.linkedin.com/in/jazmine-tran-42589219a/">
+          LinkedIn
         </a>
       </div>
 
       <div class="link">
-        <img src="thumbnails/hans-isaacson-k0dZh0vSQ5A-unsplash.jpg" alt="Computer desk" class="thumbnail">
-        <a href="https://replit.com/@jptran0">
+        <img src="/thumbnails/kawe-rodrigues-UnG6YtMuPeo-unsplash.jpg" alt="Journal" class="thumbnail">
+        <a target="_blank" href="https://dev.to/jptdev">
+          DEV - My Tech Journey
+        </a>
+      </div>
+
+      <div class="link">
+        <img src="/thumbnails/hans-isaacson-k0dZh0vSQ5A-unsplash.jpg" alt="Computer desk" class="thumbnail">
+        <a target="_blank" href="https://replit.com/@jptran0">
           Replit
         </a>
       </div>
 
       <div class="link">
-        <img src="thumbnails/minh-triet-KTGBkzzE8BM-unsplash.jpg" alt="Laptop and glasses on a desk" class="thumbnail">
-        <a href="https://www.indiehackers.com/">
+        <img src="/thumbnails/minh-triet-KTGBkzzE8BM-unsplash.jpg" alt="Laptop and glasses" class="thumbnail">
+        <a target="_blank" href="https://www.indiehackers.com/">
           Indie Hackers
         </a>
       </div>
 
       <div class="link">
-        <img src="thumbnails/aman-srivastava-140jjBjn1Do-unsplash.jpg" alt="Computer desk" class="thumbnail">
-        <a href="https://rubyweekly.com/issues/643">
-          Ruby Weekly
+        <img src="/thumbnails/aman-srivastava-140jjBjn1Do-unsplash.jpg" alt="Computer desk" class="thumbnail">
+        <a target="_blank" href="https://developer.mozilla.org/en-US/">
+          MDN Web Docs
         </a>
       </div>
-  </div>
+
+      <div class="link">
+        <img src="/thumbnails/woliul-hasan-ohlpcVxwdxM-unsplash.jpg" alt="Colorful wallpaper" class="thumbnail">
+        <a target="_blank" href="https://www.happyhues.co/">
+          Happy Hues
+        </a>
+      </div>
+    </div>
 
   </body>
 </html>
