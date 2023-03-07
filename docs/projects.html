@@ -2,30 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <style>
-      .background--custom {
-        background-color: #0E172C;
-        width: 100vw;
-        height: 100vh;
-        position: absolute;
-        overflow: hidden;
-        z-index: -2;
-        top: 0;
-        left: 0;
-      }
-      canvas#canvas {
-        z-index: -1;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        transform: rotate(12deg) scale(2) translateY(0%);
-        --gradient-color-1: #FEC7D7; 
-        --gradient-color-2: #D9D4E7; 
-        --gradient-color-3: #A786DF;  
-        --gradient-color-4: #CCF2FF;
-        --gradient-speed: 0.000006;
-      }
-    </style>
+    <title>Jazmine's Projects</title>
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="/my_styles.css">
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Lato" rel="stylesheet">
   </head>
 
   <body>
@@ -38,8 +20,11 @@
     gradient.initGradient("#canvas");
     </script>
 
-    <div>
-      
+    <div class="project-items">
+      <p class="project-text">Oops! Looks like it's empty (for now) Come back later, it's a work in progress!</p>
+      <div class="link">
+      <a href="/" class="return-home">Go back!</a>
+      </div>
     </div>
   </body>
 </html>
