@@ -41,7 +41,7 @@ body {
   text-decoration: none;
   text-align: center;
   flex-grow: 1;
-  Font-Family: 'Lato', Sans-Serif;
+  font-family: 'Sono', sans-serif;
   Font-Size: 16px;
 }
 
@@ -62,7 +62,7 @@ body {
 }
 
 .email {
-  Font-Family: 'Lato', Sans-Serif;
+  font-family: 'Sono', sans-serif;
   Font-Size: 16px;
   text-decoration: underline;
 }
@@ -130,7 +130,7 @@ body {
   text-decoration: none;
   text-align: center;
   flex-grow: 1;
-  Font-Family: 'Arvo', Serif;
+  font-family: 'Sono', sans-serif;
   Font-Size: 25px;
 }
 
@@ -139,6 +139,6 @@ body {
   text-decoration: none;
   text-align: center;
   flex-grow: 1;
-  Font-Family: 'Lato', Sans-Serif;
+  font-family: 'Sono', sans-serif;
   Font-Size: 16px;
 }
