@@ -1,25 +1,3 @@
-.background--custom {
-  background-color: #0E172C;
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  overflow: hidden;
-  z-index: -2;
-  top: 0;
-  left: 0;
-}
-canvas#canvas {
-  z-index: -1;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transform: rotate(12deg) scale(2) translateY(0%);
-  --gradient-color-1: #FEC7D7; 
-  --gradient-color-2: #D9D4E7; 
-  --gradient-color-3: #A786DF;  
-  --gradient-color-4: #CCF2FF;
-  --gradient-speed: 0.000006;
-}
 
 body {
   padding-top: 40px;
@@ -50,11 +28,12 @@ body {
 
 .link {
   background-color: #ffc6c7;
-  border: 4px #33272a dashed;
   display: flex;
   align-items: center;
-  padding: 5px;
+  border: 3px #33272a solid;
   border-radius: 40px;
+  padding: 3px;
+  transition: 0.3s;
 }
 
 .link a {
@@ -64,6 +43,22 @@ body {
   flex-grow: 1;
   Font-Family: 'Lato', Sans-Serif;
   Font-Size: 16px;
+}
+
+.link:hover {
+  background-color: #0e172c;
+}
+
+.link a:hover {
+  color: #fffffe;
+}
+
+.grow {
+  transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.1);
 }
 
 .banner {
@@ -86,6 +81,11 @@ body {
   object-fit: cover;
 }
 
+.link-name {
+  padding-top: 14px;
+  padding-bottom: 14px
+}
+
 .items {
   background-color: #faeee7;
   padding: 30px;
@@ -93,10 +93,9 @@ body {
   border: 5px #0e172c solid;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
   max-width: 600px;
   flex-grow: 1;
-  background-color: #faeee7;
   opacity: 0.8;
   background-image:  radial-gradient(#ff8ba7 2px, transparent 2px), radial-gradient(#ff8ba7 2px, #faeee7 2px);
   background-size: 80px 80px;
