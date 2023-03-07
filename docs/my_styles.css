@@ -11,7 +11,7 @@ body {
   color: #0e172c;
   display: flex;
   justify-content: center;
-  Font-Family: 'Arvo', Serif;
+  font-family: 'Itim', cursive;
   Font-Size: 44px;
 }
 
@@ -58,7 +58,13 @@ body {
 }
 
 .grow:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
+}
+
+.email {
+  Font-Family: 'Lato', Sans-Serif;
+  Font-Size: 16px;
+  text-decoration: underline;
 }
 
 .banner {
