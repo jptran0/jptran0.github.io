@@ -4,6 +4,8 @@ body {
   background-color: #fec7d7;
   display: flex;
   justify-content: center;
+  background-image: url(thumbnails/layered-waves-haikei\ \(1\).png);
+  background-size: cover;
 }
 
 .name {
