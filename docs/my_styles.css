@@ -4,7 +4,7 @@ body {
   background-color: #fec7d7;
   display: flex;
   justify-content: center;
-  background-image: url(thumbnails/layered-waves-haikei\ \(1\).png);
+  background-image: url(thumbnails/pixel-city-chill.gif);
   background-size: cover;
 }
 
@@ -14,6 +14,14 @@ body {
   justify-content: center;
   font-family: 'Itim', cursive;
   Font-Size: 44px;
+}
+
+.bio {
+  color: #0e172c;
+  display: flex;
+  justify-content: center;
+  font-family: 'Itim', cursive;
+  Font-Size: 18px;
 }
 
 .social-icons {
@@ -94,7 +102,7 @@ body {
 }
 
 .items {
-  background-color: #faeee7;
+  background-color: #ffc6c7;
   padding: 30px;
   border-radius: 25px;
   border: 5px #0e172c solid;
