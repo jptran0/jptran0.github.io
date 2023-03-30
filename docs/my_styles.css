@@ -128,11 +128,16 @@ body {
 }
 
 .thumbnail {
+  color: #0e172c;
   width: 30px;
   height: 30px;
   border-radius: 30px;
   padding-left: 5px;
   object-fit: cover;
+}
+
+.thumbnail:hover {
+  color: #fffffe;
 }
 
 .link-name {
