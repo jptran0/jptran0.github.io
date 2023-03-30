@@ -165,18 +165,19 @@ body {
   <!--background-position: 0 0,40px 40px;-->
 }
 
-.project-items {
+.bio-items {
+  background: linear-gradient(0deg, #ffbbbe, #ffbdc0, #ffc3c6, #ffcacd, #ffd3d5, #ffdadd, #ffe0e2, #ffe2e4);
   background-color: #faeee7;
-  padding: 30px;
-  border-radius: 25px;
+  padding-bottom: 30px;
+  border-radius: 20px;
   border: 5px #0e172c solid;
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  max-width: 800px;
+  gap: 20px;
+  max-width: 550px;
   flex-grow: 1;
-  background-color: #faeee7;
-  opacity: 0.8;
+  box-shadow: 9px 9px #33272a;
+  margin: 5px;
 }
 
 .project-text {
@@ -210,8 +211,8 @@ body {
 }
 
 .bio-image {
-  width: 200px;
-  height: 200px;
+  width: 290px;
+  height: 290px;
   object-fit: cover;
   border-radius: 5px;
   border: 4px #33272a solid;
@@ -228,13 +229,14 @@ body {
 
 .bio-text {
   padding-left: 10px;
+  padding-right: 7px;
   margin-bottom: 8px;
   margin-top: 5px;
 }
 
 .bio-text-top {
   padding-left: 10px;
-  padding-right: 6px;
+  padding-right: 10px;
   margin-bottom: 8px;
   margin-top: 5px;
 }
